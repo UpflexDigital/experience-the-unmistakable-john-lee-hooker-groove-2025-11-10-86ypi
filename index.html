@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the unmistakable John Lee Hooker groove with authentic tone emulation, rare performance extracts, and an interactive history timeline.">
+    <meta name="keywords" content="John Lee Hooker, blues, music, legacy, groove, boogie">
+    <meta name="author" content="John Lee Hooker Legacy">
+    <title>Experience the Unmistakable John Lee Hooker Groove</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        .faq-answer {
+            transition: all 0.3s ease-in-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        .faq-answer.hidden {
+            max-height: 0;
+            overflow: hidden;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-red-600 rounded-full flex items-center justify-center">
+                    <i class="fas fa-music text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold bg-gradient-to-r from-amber-600 to-red-600 bg-clip-text text-transparent">Hooker Legacy</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#about" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">Reviews</a>
+                <a href="#faq" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">FAQ</a>
+                <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" target="_blank" class="bg-gradient-to-r from-amber-600 to-red-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg hover:scale-105 transition-all duration-300">Explore Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-gray-700 hover:text-amber-600 transition-colors duration-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+                <div class="px-4 py-4 space-y-4">
+                    <a href="#features" class="block text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium py-2">Features</a>
+                    <a href="#benefits" class="block text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium py-2">Benefits</a>
+                    <a href="#about" class="block text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium py-2">About</a>
+                    <a href="#testimonials" class="block text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium py-2">Reviews</a>
+                    <a href="#faq" class="block text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium py-2">FAQ</a>
+                    <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" target="_blank" class="block bg-gradient-to-r from-amber-600 to-red-600 text-white px-8 py-3 rounded-full font-bold text-center hover:shadow-lg transition-all duration-300">Explore Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-red-200 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center animate-fade-in-up">
+            <div class="mb-8">
+                <span class="inline-block px-6 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-bold tracking-wide mb-6">LEGENDARY BLUES HERITAGE</span>
+            </div>
+            
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
+                Experience the Unmistakable <span class="bg-gradient-to-r from-amber-600 to-red-600 bg-clip-text text-transparent">John Lee Hooker</span> Groove
+            </h1>
+            
+            <p class="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                Dive into the raw, electrified soul of the blues legend. Discover authentic tones, rare performances, and the rich history that shaped modern music. Reconnect with the roots of American blues culture.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+                <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" target="_blank" class="bg-gradient-to-r from-amber-600 to-red-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform">
+                    <i class="fas fa-play mr-2"></i>Explore the Legacy
+                </a>
+                <a href="#features" class="border-2 border-gray-300 text-gray-900 px-10 py-4 rounded-full font-bold text-lg hover:border-amber-600 hover:text-amber-600 hover:shadow-lg transition-all duration-300">
+                    <i class="fas fa-arrow-down mr-2"></i>Learn More
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-3xl font-bold text-amber-600 mb-2">70+</div>
+                    <p class="text-gray-600 font-medium">Years of Musical Legacy</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-3xl font-bold text-amber-600 mb-2">500+</div>
+                    <p class="text-gray-600 font-medium">Recorded Performances</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-3xl font-bold text-amber-600 mb-2">∞</div>
+                    <p class="text-gray-600 font-medium">Timeless Influence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Premium Features</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">Discover what makes the John Lee Hooker experience truly authentic and immersive</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Authentic Tone Emulation -->
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-gradient-to-br from-amber-600 to-red-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Authentic Tone Emulation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Experience the exact sonic characteristics of John Lee Hooker's legendary guitar work. Our advanced tone emulation technology captures the raw, gritty, and electrifying essence of his signature sound, allowing musicians to channel the spirit of the blues master in their own creations.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Studio-quality sound reproduction</li>
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Vintage equipment modeling</li>
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Real-time audio processing</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Rare Performance Extracts -->
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-gradient-to-br from-amber-600 to-red-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Rare Performance Extracts</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Access an exclusive collection of rare and unreleased performances from John Lee Hooker's legendary career. These carefully curated extracts showcase different eras, styles, and moods of his artistry, providing inspiration and educational value for musicians and blues enthusiasts alike.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Unreleased recordings</li>
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Live session captures</li>
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Studio outtakes archive</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Interactive History Timeline -->
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-gradient-to-br from-amber-600 to-red-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Interactive History Timeline</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Journey through John Lee Hooker's remarkable career with our immersive interactive timeline. Explore key moments, breakthrough performances, collaborations, and cultural impacts across decades of blues history, complete with detailed annotations and multimedia content.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Chronological journey</li>
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Multimedia content</li>
+                        <li class="flex items-center"><i class="fas fa-check text-amber-600 mr-3"></i>Historical context</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Transform Your Musical Journey</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">Unlock the profound benefits of connecting with blues heritage and legendary artistry</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1: Connect with Blues Roots -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Connect with Blues Roots</h3>
+                    <p class="text-gray-600 leading-relaxed text-center mb-6">
+                        Establish a meaningful connection to the authentic origins of American blues music. By immersing yourself in John Lee Hooker's work, you'll understand the cultural, historical, and emotional foundations that shaped modern music and influenced generations of artists.
+                    </p>
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-amber-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Deepen your appreciation for blues history and cultural significance</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-amber-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Learn from the master's techniques and artistic philosophies</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-amber-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Gain insight into the evolution of modern music genres</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Inspire New Musical Creations -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5a4 4 0 100-8 4 4 0 000 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Inspire New Musical Creations</h3>
+                    <p class="text-gray-600 leading-relaxed text-center mb-6">
+                        Unlock your creative potential by channeling the raw energy and authenticity of John Lee Hooker's blues legacy. Whether you're composing, performing, or producing, access to his signature sound and techniques will spark innovative ideas and elevate your musical output.
+                    </p>
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-red-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Access authentic tone emulation for your compositions</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-red-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Draw inspiration from rare performances and techniques</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-red-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Create music with historical authenticity and modern appeal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Deepen Musical Appreciation -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Deepen Musical Appreciation</h3>
+                    <p class="text-gray-600 leading-relaxed text-center mb-6">
+                        Develop a richer, more nuanced understanding of music through the lens of one of blues' greatest innovators. By exploring John Lee Hooker's artistry in depth, you'll cultivate a more sophisticated ear and a deeper emotional connection to music across all genres.
+                    </p>
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-amber-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Understand the nuances of blues musicianship and improvisation</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-amber-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Recognize musical elements across contemporary genres</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-circle-check text-amber-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Build a comprehensive knowledge of musical heritage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-8 tracking-tight">Preserving Blues Legacy</h2>
+                    
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Founded in 2015, the John Lee Hooker Legacy Project emerged from a passionate mission to preserve and celebrate the extraordinary contributions of one of America's most influential blues musicians. Our organization was established by music historians, producers, and devoted fans who recognized the need to archive, authenticate, and share the vast catalog of John Lee Hooker's work with new generations. What began as a small archival initiative has grown into a comprehensive digital platform that honors his artistic genius while making his music, performances, and historical context accessible to a global audience.
+                    </p>
+                    
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        At our core, we believe that blues music is not merely entertainment—it's a vital expression of human experience, resilience, and cultural identity. Our mission is to ensure that John Lee Hooker's revolutionary impact on music and culture is never forgotten. We're committed to maintaining the highest standards of authenticity and quality in everything we do, from our tone emulation technology to our curated historical content. Through education, preservation, and innovation, we strive to inspire musicians and music lovers worldwide to appreciate the profound artistry and enduring influence of the blues, ensuring that Hooker's legacy continues to resonate and inspire for generations to come.
+                    </p>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-600 to-red-600 rounded-2xl transform rotate-3"></div>
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&h=600&fit=crop" alt="John Lee Hooker Legacy" class="relative rounded-2xl shadow-2xl w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">What Musicians & Fans Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">Discover how the John Lee Hooker Legacy has transformed musical journeys worldwide</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "This platform completely transformed how I approach blues guitar. The authentic tone emulation is absolutely incredible—I've never heard Hooker's sound reproduced so accurately. It's like having a master class directly from the legend himself. My compositions have evolved tremendously."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-gray-900">Marcus Johnson</p>
+                        <p class="text-sm text-gray-600">Blues Guitarist & Composer</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "As a music educator, I've integrated this resource into my curriculum. Students are genuinely engaged when they can explore the interactive timeline and hear rare performances. The historical context paired with authentic audio has deepened their appreciation for blues culture exponentially."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-gray-900">Dr. Sarah Mitchell</p>
+                        <p class="text-sm text-gray-600">Music History Professor</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "I've been a John Lee Hooker fan for forty years, and this platform has given me access to performances I never knew existed. The rare recordings and unreleased material are treasure. It's a beautiful way to honor his legacy while discovering new dimensions of his artistry."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-gray-900">James Richardson</p>
+                        <p class="text-sm text-gray-600">Blues Enthusiast & Collector</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        "As a music producer, I use the tone emulation tools daily in my studio sessions. The quality is professional-grade and saves me countless hours of tweaking. My clients consistently notice the authentic blues character in my productions. Highly recommend to any serious musician."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-bold text-gray-900">Elena Rodriguez</p>
+                        <p class="text-sm text-gray-600">Music Producer & Sound Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 leading-relaxed">Find answers to common questions about the John Lee Hooker Legacy platform</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="faq-question cursor-pointer p-8 flex items-center justify-between hover:bg-gray-100 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-gray-900">What makes the tone emulation technology unique compared to other platforms?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-600 leading-relaxed">
+                        Our tone emulation technology utilizes advanced machine learning algorithms trained on decades of John Lee Hooker's recordings and performances. We've captured not just the sound, but the nuances—the subtle sustains, the unique bending techniques, the raw distortion characteristics of his vintage equipment. Unlike generic tone libraries, our system understands the context and emotional intent behind Hooker's playing, allowing musicians to reproduce not just the sound, but the soul of his artistry.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="faq-question cursor-pointer p-8 flex items-center justify-between hover:bg-gray-100 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-gray-900">Are the rare performance extracts available in high-quality audio formats?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-600 leading-relaxed">
+                        Absolutely. We've invested significantly in audio restoration and mastering to ensure that all rare performance extracts are available in multiple formats including lossless FLAC, high-bitrate MP3, and studio-quality WAV files. Each recording has been professionally remastered to enhance clarity while preserving the authentic character of the original performances. Whether you're listening on headphones or in a professional studio setting, you'll experience the highest possible audio quality.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="faq-question cursor-pointer p-8 flex items-center justify-between hover:bg-gray-100 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-gray-900">How frequently is the interactive timeline updated with new content?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-600 leading-relaxed">
+                        Our content team continuously researches and curates new material for the interactive timeline. We update the platform monthly with newly discovered recordings, historical documents, photographs, and contextual information. Additionally, we work with archives, collectors, and Hooker's estate to authenticate and incorporate previously unknown material. Subscribers receive notifications whenever significant additions are made to the timeline, ensuring you never miss important discoveries.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="faq-question cursor-pointer p-8 flex items-center justify-between hover:bg-gray-100 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-gray-900">Can I use the tone emulation in commercial music production?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-600 leading-relaxed">
+                        Yes, absolutely. Our platform licenses allow full commercial use of the tone emulation technology in any production context—whether that's recording albums, creating soundtracks, producing podcasts, or any other professional endeavor. We've ensured that all necessary rights and clearances are in place. Professional subscribers receive a comprehensive commercial license agreement that details all permitted uses. We're proud to support musicians in creating professional-quality work inspired by John Lee Hooker's legacy.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                    <div class="faq-question cursor-pointer p-8 flex items-center justify-between hover:bg-gray-100 transition-colors duration-300">
+                        <h3 class="text-lg font-bold text-gray-900">What level of technical expertise do I need to use these tools effectively?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 pb-8 text-gray-600 leading-relaxed">
+                        Our platform is designed to be accessible to musicians of all skill levels. Beginners can use preset configurations that instantly deliver authentic Hooker-inspired tones, while advanced users have granular control over every parameter. We provide comprehensive tutorials, documentation, and video guides for every feature. Additionally, our community forum connects users who can share tips and techniques. Whether you're just starting out or a seasoned audio engineer, you'll find the tools intuitive and powerful.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=600&fit=crop" alt="Studio Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="max-w-3xl">
+                <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
+                    Ready to Experience the Legend?
+                </h2>
+                <p class="text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl">
+                    Join thousands of musicians and blues enthusiasts who have already discovered the transformative power of John Lee Hooker's legacy. Explore authentic tones, rare performances, and rich history today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" target="_blank" class="bg-gradient-to-r from-amber-600 to-red-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform text-center">
+                        <i class="fas fa-play mr-2"></i>Explore Now
+                    </a>
+                    <a href="#faq" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 text-center">
+                        <i class="fas fa-question-circle mr-2"></i>Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <!-- Contact Form Section - Centered Card Layout -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="John Doe"
+              >
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="john@example.com"
+              >
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number
+              </label>
+              <input 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="+1 (555) 000-0000"
+              >
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Message <span class="text-red-500">*</span>
+              </label>
+              <textarea 
+                name="message" 
+                id="message" 
+                required 
+                rows="5" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none resize-none"
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <div class="pt-4">
+              <button 
+                type="submit" 
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl"
+              >
+                Send Message
+              </button>
+            </div>
+
+            <div id="form-result" class="hidden mt-4 p-4 rounded-lg text-center font-medium"></div>
+          </form>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-600">
+            Or email us directly at <a href="mailto:hello@example.com" class="text-blue-600 hover:text-blue-700 font-semibold">hello@example.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function() {
+        const form = document.querySelector('form[action*="web3forms"]');
+        const resultDiv = document.getElementById('form-result');
+        
+        if (!form) return;
+        
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          const formData = new FormData(form);
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+          resultDiv.classList.add('hidden');
+          
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok && data.success) {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-green-50 text-green-800 border border-green-200';
+              resultDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+              form.reset();
+            } else {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+              resultDiv.textContent = data.message || 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+            resultDiv.textContent = 'Network error. Please check your connection and try again.';
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+        });
+      })();
+    </script>
+  <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-music text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold bg-gradient-to-r from-amber-400 to-red-400 bg-clip-text text-transparent">Hooker Legacy</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Preserving and celebrating the legendary blues artistry of John Lee Hooker for generations to come.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors duration-300">
+                            <i class="fab fa-youtube text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Tutorials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Community</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal & Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Legal & Contact</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="mailto:technoeg2723@gmail.com" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 John Lee Hooker Legacy Project. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        Celebrating the timeless artistry of a blues legend | <a href="mailto:technoeg2723@gmail.com" class="text-amber-400 hover:text-amber-300 transition-colors duration-300">technoeg2723@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
